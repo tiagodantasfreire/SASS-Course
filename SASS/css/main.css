@@ -3,13 +3,19 @@
   margin: 0;
   box-sizing: border-box; }
 
+.heading, .banner h1, .footer h3 {
+  color: #5CA4A9;
+  font-size: 3rem;
+  background-color: #ED6A5A;
+  text-align: center; }
+
 body {
-  background-color: #333 !important;
-  color: #fff;
+  background-color: #9BC1BC !important;
+  color: #000;
   font-family: sans-serif; }
 
 .nav {
-  background-color: #00bcd4; }
+  background-color: #5CA4A9; }
   .nav ul li {
     list-style: none; }
     .nav ul li a {
@@ -20,17 +26,16 @@ body {
         filter: brightness(0.9); }
 
 .banner h1 {
-  margin: 2rem 0;
   font-size: 3rem;
   text-align: center;
-  color: #f0f0f0; }
+  color: #F4F1BB; }
 
 .footer h3 {
   margin: 2rem 0;
   font-size: 2rem;
   text-align: center;
-  color: #f0f0f0;
+  color: #F4F1BB;
   transition: color 0.3s, background-color 0.3s; }
   .footer h3:hover {
-    color: green;
-    background-color: #00bcd4; }
+    color: #ED6A5A;
+    background-color: #5CA4A9; }

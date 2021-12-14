@@ -1,7 +1,7 @@
 // Global variables:
-$color-primary: #00bcd4;
-$color-secondary: gray;
-$color-tertiary: green;
+$color-primary: #5CA4A9;
+$color-secondary: #F4F1BB;
+$color-tertiary: #ED6A5A;
 
 $font-lg: 3rem;
 $font-md: 2rem;
@@ -16,16 +16,23 @@ $font-sm: 1rem;
 @mixin headingStyles($fontSize: 1.5rem) {
   font-size: $fontSize;
   text-align: center;
-  color: #f0f0f0;
+  color: $color-secondary;
 }
 
 @mixin transition($param...) {
   transition: $param;
 }
 
+.heading {
+  color: $color-primary;
+  font-size: $font-lg;
+  background-color: $color-tertiary;
+  text-align: center;
+}
+
 body {
-  background-color: #333 !important;
-  color: #fff;
+  background-color: #9BC1BC !important;
+  color: #000;
   font-family: sans-serif;
 }
 
@@ -52,13 +59,14 @@ body {
 
 .banner {
   h1 {
-    margin: 2rem 0;
+    @extend .heading;
     @include headingStyles($font-lg);
   }
 }
 
 .footer {
   h3 {
+    @extend .heading;
     margin: 2rem 0;
     @include headingStyles($font-md);
     @include transition(color 0.3s, background-color 0.3s);
