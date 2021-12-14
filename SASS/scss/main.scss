@@ -23,6 +23,10 @@ $font-sm: 1rem;
   transition: $param;
 }
 
+@function rem($value) {
+  @return ($value / 16) + rem;
+}
+
 .heading {
   color: $color-primary;
   font-size: $font-lg;
@@ -31,13 +35,13 @@ $font-sm: 1rem;
 }
 
 body {
-  background-color: #9BC1BC !important;
-  color: #000;
+  background-color: transparentize(#000000, 0.9) !important;
+  color: trans#000;
   font-family: sans-serif;
 }
 
 .nav {
-  background-color: $color-primary;
+  background-color: lighten($color-primary, 25%);
 
   ul {
     li {
@@ -47,7 +51,7 @@ body {
         $color-secondary: #fff; // this is a local variable 
         text-decoration: none;
         font-size: $font-sm;
-        color: $color-secondary;
+        color: darken($color-secondary, 40%);
 
         &:hover {
           filter: brightness(.9);
@@ -61,6 +65,10 @@ body {
   h1 {
     @extend .heading;
     @include headingStyles($font-lg);
+  }
+
+  p {
+    font-size: rem(18);
   }
 }
 

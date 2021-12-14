@@ -10,18 +10,18 @@
   text-align: center; }
 
 body {
-  background-color: #9BC1BC !important;
-  color: #000;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  color: trans #000;
   font-family: sans-serif; }
 
 .nav {
-  background-color: #5CA4A9; }
+  background-color: #afd3d5; }
   .nav ul li {
     list-style: none; }
     .nav ul li a {
       text-decoration: none;
       font-size: 1rem;
-      color: #fff; }
+      color: #999999; }
       .nav ul li a:hover {
         filter: brightness(0.9); }
 
@@ -29,6 +29,9 @@ body {
   font-size: 3rem;
   text-align: center;
   color: #F4F1BB; }
+
+.banner p {
+  font-size: 1.125rem; }
 
 .footer h3 {
   margin: 2rem 0;
