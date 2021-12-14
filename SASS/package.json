@@ -1,0 +1,12 @@
+{
+  "name": "SASS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass -o css scss/main.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
